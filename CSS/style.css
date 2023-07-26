@@ -1,0 +1,277 @@
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+	background-color: #d4d2d2;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2.5rem;
+	color: #07459F ;
+}
+
+h4{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+span{
+    color:#fc7e08;
+}
+
+hr {
+	height: 2px;
+	background-color: rgb(10, 10, 10);
+  }
+
+/*---------------------- social ----------------------------------*/
+.social-body{
+	position:fixed;
+	top:80%;
+	left:0;
+	margin-top:-80px;
+	z-index:999;
+}
+.social-body ul li{
+	display:block;
+}
+.social-body ul li a{
+	font-size:20px;
+	color:#fff;
+	background:#42bc7f;
+	height: 40px;
+    width: 40px;
+	line-height:40px;
+	text-align:center;
+	display:block;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.social-body ul li a:hover{
+	width:50px;
+}
+.social-body  ul li.facebook a{
+	background:#425F9C;
+}
+.social-body ul li.instagram a{
+	background:#ee22b1;
+}
+.social-body ul li.whatsapp a {
+	background: #25D366;
+}
+.social-body ul li.gmail a {
+	background: #CB2028;
+}
+.sm-icons{
+    flex-direction: row;
+}
+.sm-icons .nav-link{
+    padding-right: 1rem ;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+.my-float{
+	margin-top:16px;
+}
+/*----------------------/social ----------------------------------*/
+
+/*----------------------- headr---------------------------------------- */
+.header{
+    --opacidad-negro: 0.4;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../IMG/stand/itpe1.png");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+}
+
+.header img, .diseño img, .renta img{
+    height: 4rem;
+}
+
+/*----------------------- /headr---------------------------------------- */
+
+/*----------------------- blog---------------------------------------- */
+.blog{
+    --opacidad-negro: 0.4;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../IMG/simm.webp");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+}
+
+.blog img{
+    height: 4rem;
+}
+
+/*----------------------- /blog---------------------------------------- */
+
+
+/*-----------------------Nosotros---------------------------------------- */
+
+.nosotros{
+    background-color: #e0dede;
+}
+
+.nosotros p{
+    font-size: 1.2rem;
+}
+
+.nosotros img{
+    height: 30rem;
+    width: 35rem;
+    /*
+    padding-top: 0.1rem;
+    box-shadow: 8px 6px 6px 0 rgba(0, 0, 0, 0.50);
+    */
+}
+
+.parallax{
+    background-image: linear-gradient(rgba(248, 13, 13, 0.5),rgba(248, 13, 13, 0.5)),
+    url(../IMG/stand/expo-manufactura-2021.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    height: 25rem;
+}
+
+.parallax p{
+    font-size: 2rem;
+    color: white;
+}
+
+/*-----------------------/Nosotros---------------------------------------- */
+
+
+/*----------------------- servicios---------------------------------------- */
+
+.card-effect{
+    padding-top: 1.5rem;
+}
+
+.card-img-filter{
+    filter: brightness(0.5);
+}
+
+.card{
+    transition-duration: .6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+}
+
+.card-effect:hover .card{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+   
+}
+
+.card-img-overlay{
+    transition-duration: 0.6;
+}
+
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.7);
+}
+
+/*-----------------------/servicios---------------------------------------- */
+
+
+
+/*-----------------------renta---------------------------------------- */
+.modal img{
+    height: 30rem;
+    width: 30rem;
+}
+/*-----------------------/renta---------------------------------------- */
+
+/*-----------------------Comentarios---------------------------------------*/
+.testimonial-section{
+    background-color: #e6e1e1;
+    padding: 80px 0;
+    min-height: 100vh;
+}
+.testi-img .img-box{
+    max-width: 360px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+.testi-img .circle{
+    height: 360px;
+    width: 360px;
+    background-color: #fb9c9a;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+.testi-img .img-box-inner{
+    position: relative;
+    border-radius: 0 0 180px 180px;
+    overflow:hidden;
+}
+.testi-img .img-box-inner img{
+    max-width: 310px;
+}
+.testimonial-section .carousel-inner{
+    margin-bottom: 20px;
+}
+.testimonial-section .carousel-control-prev{
+    margin-right: 10px;
+}
+.testimonial-section .carousel-control-next, 
+.testimonial-section .carousel-control-prev{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: #f85d03;   
+    display: inline-flex;
+    border-radius: 50%;
+}
+.testimonial-section .carousel-control-prev img,
+.testimonial-section .carousel-control-next img{
+    width: 15px;
+}
+.testi-item h3, .testi-item p{
+    font-size: 18px;
+}
+.testi-item h3{
+    text-transform: capitalize;
+}
+/*-----------------------/ Comentarios---------------------------------------*/
